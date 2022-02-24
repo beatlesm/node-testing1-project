@@ -82,7 +82,13 @@ describe('[Exercise 5] Seasons', () => {
     seasons.next()
     expect(seasons.next()).toBe('spring')    
   })
-  test.todo('[13] the FIFTH call of seasons.next returns again "summer"')
+  test('[13] the FIFTH call of seasons.next returns again "summer"', () => {
+    seasons.next()
+    seasons.next()
+    seasons.next()
+    seasons.next()
+    expect(seasons.next()).toBe('summer')    
+  })
   test.todo('[14] the 40th call of seasons.next returns "spring"')
 })
 
