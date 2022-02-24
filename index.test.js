@@ -64,7 +64,9 @@ describe('[Exercise 5] Seasons', () => {
   beforeEach(() => {
     seasons = new utils.Seasons() // each test must start with fresh seasons
   })
-  test.todo('[9] the FIRST call of seasons.next returns "summer"')
+  test('[9] the FIRST call of seasons.next returns "summer"', () => {
+    expect(seasons.next()).toBe('summer')    
+  })
   test.todo('[10] the SECOND call of seasons.next returns "fall"')
   test.todo('[11] the THIRD call of seasons.next returns "winter"')
   test.todo('[12] the FOURTH call of seasons.next returns "spring"')
